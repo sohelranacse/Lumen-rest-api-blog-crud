@@ -1,0 +1,23 @@
+https://lumen.laravel.com/
+composer create-project --prefer-dist laravel/lumen rest_api
+php -S localhost:8000 -t public
+
+https://github.com/flipboxstudio/lumen-generator
+composer require flipbox/lumen-generator
+
+php artisan key:generate
+
+php artisan make:model Post -fmc
+
+php artisan migrate
+
+php artisan key:generate
+
+php artisan make:model Post -fmc
+
+php artisan migrate
+
+https://jwt-auth.readthedocs.io/en/develop/lumen-installation/
+composer require tymon/jwt-auth
+php artisan jwt:secret
+composer require lcobucci/jwt:3.3.3
