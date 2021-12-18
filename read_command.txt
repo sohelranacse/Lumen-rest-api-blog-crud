@@ -20,4 +20,13 @@ php artisan migrate
 https://jwt-auth.readthedocs.io/en/develop/lumen-installation/
 composer require tymon/jwt-auth
 php artisan jwt:secret
-composer require lcobucci/jwt:3.3.3
+composer require lcobucci/jwt:3.3.3(if need)
+
+
+php artisan tinker
+factory(App\Post::class, 10)->create();
+
+php artisan make:migration create_user_table --create=users
+php artisan make:controller AuthController
+
+factory(App\User::class, 5)->create();
